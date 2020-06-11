@@ -1,0 +1,180 @@
+<?xml version="1" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/fragment_cc"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin">
+
+    <TextView
+        android:id="@+id/infoTextView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginBottom="1dp"
+        android:gravity="center"
+        android:text="基本信息"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/cc2TextView"
+        android:layout_width="100dp"
+        android:layout_height="45dp"
+        android:layout_below="@+id/infoTextView"
+        android:layout_marginStart="50dp"
+        android:layout_marginBottom="1dp"
+        android:gravity="center"
+        android:text="CC频率1"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/cc2EditText"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:layout_below="@+id/infoTextView"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="50dp"
+        android:layout_toEndOf="@+id/cc2TextView"
+        android:inputType="number" />
+
+    <TextView
+        android:id="@+id/cc1TextView"
+        android:layout_width="100dp"
+        android:layout_height="45dp"
+        android:layout_below="@+id/cc2TextView"
+        android:layout_marginStart="50dp"
+        android:layout_marginBottom="1dp"
+        android:gravity="center"
+        android:text="CC频率2"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/cc1EditText"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:layout_below="@+id/cc2TextView"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="50dp"
+        android:layout_toEndOf="@+id/cc1TextView"
+        android:inputType="number" />
+
+    <TextView
+        android:id="@+id/ccTimeTextView"
+        android:layout_width="100dp"
+        android:layout_height="45dp"
+        android:layout_below="@+id/cc1TextView"
+        android:layout_marginStart="50dp"
+        android:layout_marginBottom="1dp"
+        android:gravity="center"
+        android:text="CC时长"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/ccTimeEditText"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:layout_below="@+id/cc1TextView"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="50dp"
+        android:layout_toEndOf="@+id/ccTimeTextView"
+        android:inputType="number" />
+
+    <TextView
+        android:id="@+id/slipCountTextView"
+        android:layout_width="100dp"
+        android:layout_height="45dp"
+        android:layout_below="@+id/ccTimeTextView"
+        android:layout_marginStart="50dp"
+        android:layout_marginBottom="1dp"
+        android:gravity="center"
+        android:text="下滑次数"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/slipCountEditText"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:layout_below="@+id/ccTimeTextView"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="50dp"
+        android:layout_toEndOf="@+id/slipCountTextView"
+        android:inputType="number" />
+
+    <TextView
+        android:id="@+id/touchDurationTextView"
+        android:layout_width="100dp"
+        android:layout_height="45dp"
+        android:layout_below="@+id/slipCountTextView"
+        android:layout_marginStart="50dp"
+        android:layout_marginBottom="1dp"
+        android:gravity="center"
+        android:text="按键时长"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/touchDurationEditText"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:layout_below="@+id/slipCountTextView"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="50dp"
+        android:layout_toEndOf="@+id/touchDurationTextView"
+        android:inputType="number" />
+
+    <Button
+        android:id="@+id/changeButton"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/touchDurationTextView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="100dp"
+        android:layout_marginBottom="1dp"
+        android:text="修改位置（会屏蔽功能）" />
+
+    <Button
+        android:id="@+id/saveButton"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/changeButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="100dp"
+        android:layout_marginBottom="1dp"
+        android:text="保存配置" />
+
+    <Button
+        android:id="@+id/desButton"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/saveButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="100dp"
+        android:layout_marginBottom="1dp"
+        android:text="使用说明" />
+
+    <Button
+        android:id="@+id/ccControl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/desButton"
+        android:layout_alignStart="@+id/desButton"
+        android:text="开启CC" />
+
+    <Button
+        android:id="@+id/fanControl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/desButton"
+        android:layout_centerHorizontal="true"
+        android:text="开启反" />
+
+    <Button
+        android:id="@+id/slipControl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/desButton"
+        android:layout_alignEnd="@+id/desButton"
+        android:text="开启下滑" />
+</RelativeLayout>
